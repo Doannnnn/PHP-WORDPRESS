@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 800px;
+    max-width: 100%;
     padding: 64px 16px;
     margin-left: auto;
     margin-right: auto;
@@ -48,9 +49,9 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #000;
     height: 46px;
     z-index: 1;
+    background-color: #000;
 }
 
 .nav {
@@ -107,19 +108,37 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-#header .btn-search {
-    float: right;
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
-#header .btn-search .fa-search{
+#header .btn-search,
+#header .mobile-menu-btn {
+    float: right;
+    cursor: pointer;
+}
+
+#header .btn-search .fa-search,
+#header .mobile-menu-btn .fa-bars {
     color: #fff;
     line-height: 46px;
     padding: 0 23px;
     font-size: 20px;
 }
 
-#header .btn-search:hover {
+#header .btn-search:hover{
     background-color: #f44336;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .fa-bars{
+    color: #000;
 }
 
 #main {
