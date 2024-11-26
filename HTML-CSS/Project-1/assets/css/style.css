@@ -6,6 +6,11 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -16,6 +21,10 @@ body {
 }
 
 /* Common */
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 1110px;
     max-width: calc(100% - 48px);
@@ -35,6 +44,10 @@ body {
     background-color: var(--primary-color);
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
+
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 2);
@@ -43,40 +56,34 @@ body {
     overflow: hidden;
 }
 
-.btn:hover {
-    opacity: 0.9;
-}
-
-a {
-    text-decoration: none;
-}
-
 /* Header */
 .header {
-    position: relative;
-    height: 100vh;
+    position: sticky;
+    top: -26px;
+    padding-top: 26px;
+    z-index: 1;
     background-color: #e6f0ff;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
-.navbar ul {
+.navbar .nav-list {
     display: flex;
     margin-left: 50px;
 }
 
-.navbar ul a {
+.navbar .nav-link {
     font-weight: 500;
     font-size: 1.4rem;
     color: #4f5361;
     padding: 8px 14px;
 }
 
-.navbar ul a:hover {
+.navbar .nav-link:hover {
     text-decoration: underline;
 }
 
@@ -96,8 +103,14 @@ a {
     border-radius: 8px;
 }
 
+/* Hero */
 .hero {
-    margin-top: 130px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 90px);
+    background-color: #e6f0ff;
 }
 
 .hero .info {
@@ -165,7 +178,19 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 96px;
+    margin-top: 70px;
+}
+
+.images .image-link {
+    display: flex;
+    align-items: center;
+    padding: 0 42px;
+    height: 90px;
+    border-radius: 12px;
+}
+
+.images .image-link:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Guides */
@@ -207,7 +232,7 @@ a {
     color: #5a6473;
 }
 
-.list-guide {
+.guide-list {
     display: flex;
     justify-content: center;
     margin-top: 70px;
@@ -218,7 +243,7 @@ a {
     text-align: center;
 }
 
-.guide-item .title {
+.guide-item .guide-title {
     margin-top: 26px;
     font-weight: 500;
     font-size: 2rem;
@@ -226,7 +251,7 @@ a {
     color: #3b3c45;
 }
 
-.guide-item .link {
+.guide-item .guide-link {
     display: inline-block;
     margin-top: 10px;
     font-weight: 600;
@@ -286,19 +311,19 @@ a {
     margin-left: 8px;
 }
 
-.list-featured {
+.featured-list {
     display: flex;
     gap: 30px;
     margin-top: 70px;
 }
 
-.item-featured {
+.featured-item {
     flex: 1;
     border-radius: 12px;
     background-color: #ffffff;
 }
 
-.item-featured .thumb {
+.featured-item .thumb {
     width: 100%;
     height: 227px;
     object-fit: cover;
@@ -306,18 +331,18 @@ a {
     border-top-right-radius: 12px;
 }
 
-.item-featured .body {
+.featured-item .body {
     padding: 17px 20px 24px;
 }
 
-.item-featured .title {
+.featured-item .title {
     font-weight: 600;
     font-size: 2rem;
     line-height: 1.5;
     color: #000339;
 }
 
-.item-featured .desc {
+.featured-item .desc {
     margin-top: 11px;
     font-weight: 500;
     font-size: 1.4rem;
@@ -326,21 +351,21 @@ a {
     word-break: break-all;
 }
 
-.item-featured .info {
+.featured-item .info {
     display: flex;
     align-items: center;
     margin-top: 21px;
 }
 
-.item-featured .icon {
+.featured-item .icon {
     margin-left: 23px;
 }
 
-.item-featured .icon:first-child {
+.featured-item .icon:first-child {
     margin-left: 0;
 }
 
-.item-featured .label {
+.featured-item .label {
     margin-left: 8px;
     font-weight: 500;
     font-size: 1.4rem;
@@ -600,18 +625,21 @@ a {
     margin-top: 40px;
 }
 
-.footer .social-lick {
+.footer .social-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 16px;
     width: 28px;
     height: 28px;
     border-radius: 3px;
     background-color: #f9f9f9;
 }
 
-.footer .social-lick:hover {
+.footer .social-link + .social-link {
+    margin-left: 16px;
+}
+
+.footer .social-link:hover {
     background-color: #ebebeb;
 }
 
