@@ -353,6 +353,7 @@ a {
 }
 
 .features-item .title {
+    width: 100%;
     margin-top: 26px;
     font-size: 2rem;
     font-weight: 600;
@@ -663,6 +664,10 @@ a {
 
 .footer .footer-item:first-child .footer-link {
     margin-top: 0;
+}
+
+.footer .footer-item:hover .footer-link {
+    text-decoration: underline;
 }
 
 .footer .footer-link {
