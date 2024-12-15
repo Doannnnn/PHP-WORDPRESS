@@ -81,8 +81,6 @@
             content="./assets/favicon/ms-icon-144x144.png"
         />
         <meta name="theme-color" content="#ffffff" />
-        <!-- Link Reset CSS -->
-        <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- Link Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -90,6 +88,8 @@
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
         />
+        <!-- Link Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- Link CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
@@ -674,18 +674,18 @@
                                 with a special online bank and move faster
                             </p>
                             <div class="download__cta">
-                                <button class="btn-lg download__cta-btn">
+                                <a href="#!" class="btn-lg download__cta-btn">
                                     <img
                                         src="./assets/icon/google-play.svg"
                                         alt=""
                                     />
-                                </button>
-                                <button class="btn-lg download__cta-btn">
+                                </a>
+                                <a href="#!" class="btn-lg download__cta-btn">
                                     <img
                                         src="./assets/icon/app-store.svg"
                                         alt=""
                                     />
-                                </button>
+                                </a>
                             </div>
                             <!-- Decor -->
                             <img
@@ -791,9 +791,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="foot__contact">
-                    <p class="foot__contact-text">email@gmail.com</p>
-                    <p class="foot__contact-text">(123) 456-7890</p>
+                <div class="foot-contact">
+                    <p class="foot-contact__title">
+                        Mail to:
+                        <a href="#!" class="foot-contact__link">
+                            email@gmail.com
+                        </a>
+                    </p>
+                    <p class="foot-contact__title">
+                        Tel to:
+                        <a href="#!" class="foot-contact__link">
+                            (123) 456-7890
+                        </a>
+                    </p>
                 </div>
             </div>
             <div class="foot__copyright">
