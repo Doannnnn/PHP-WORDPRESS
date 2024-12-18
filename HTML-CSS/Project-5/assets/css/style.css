@@ -144,7 +144,7 @@ a {
     color: var(--secondary-color);
 }
 
-.navbar__item:hover:hover::after {
+.navbar__item:hover::after {
     position: absolute;
     display: inline-block;
     content: "";
