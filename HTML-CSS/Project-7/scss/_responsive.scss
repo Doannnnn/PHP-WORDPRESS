@@ -1,0 +1,325 @@
+/* Desktop */
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    font-size: 6rem;
+
+    &::before {
+      top: 109px;
+      height: 20%;
+      rotate: -3deg;
+    }
+  }
+
+  .newsletter__title,
+  .testimonial__title,
+  .popular__title,
+  .category__title,
+  .company__title {
+    font-size: 4rem;
+  }
+
+  .company__title:before {
+    top: 75px;
+    right: -20px;
+    width: 64%;
+    height: 40%;
+  }
+
+  .category__title:before {
+    top: 30px;
+    width: 25%;
+    transform: translateX(-4%);
+  }
+
+  .popular__title {
+    width: 40%;
+
+    &::before {
+      top: 36px;
+      right: 48px;
+    }
+  }
+
+  .testimonial__title:before {
+    top: 30px;
+    left: 47%;
+    width: 50%;
+  }
+
+  .newsletter__title {
+    width: 50%;
+
+    &::before {
+      left: -9px;
+      width: 42%;
+    }
+  }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+  .header__navbar,
+  .header__actions {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .hero__title {
+    width: 80%;
+
+    &::before {
+      width: 49%;
+      height: 30%;
+      rotate: -3deg;
+    }
+  }
+
+  .hero__content {
+    margin-top: 39px;
+  }
+
+  .company__media {
+    width: 100%;
+    order: 1;
+  }
+
+  .company__content {
+    margin-top: 38px;
+    width: 100%;
+    order: 2;
+  }
+
+  .company__title {
+    width: 80%;
+
+    &::before {
+      top: 72px;
+      width: 37%;
+      left: 0;
+      right: auto;
+      rotate: -3deg;
+    }
+
+    .company__desc {
+      width: 80%;
+    }
+  }
+
+  .category__title {
+    width: 100%;
+
+    &::before {
+      width: 28%;
+    }
+  }
+
+  .category__desc {
+    width: 50%;
+  }
+
+  .popular__title {
+    width: 53%;
+  }
+
+  .popular-item {
+    width: 100%;
+
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+
+  .testimonial__content {
+    width: 100%;
+    order: 1;
+  }
+
+  .testimonial__title {
+    width: 75%;
+
+    &::before {
+      left: 31%;
+    }
+  }
+
+  .testimonial__media {
+    margin-top: 28px;
+    width: 100%;
+    height: 545px;
+    order: 2;
+  }
+
+  .newsletter__wrap {
+    padding: 0;
+  }
+
+  .newsletter__header {
+    flex-direction: column;
+  }
+
+  .newsletter__title {
+    width: 100%;
+
+    &::before {
+      top: 28px;
+      right: 12px;
+      left: auto;
+      bottom: auto;
+      width: 30%;
+    }
+  }
+
+  .newsletter__desc {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form__input {
+    width: 100%;
+  }
+
+  .newsletter-form__input + .newsletter-form__input {
+    margin-top: 12px;
+  }
+
+  .newsletter-form__btn {
+    margin-top: 18px;
+    align-self: start;
+  }
+
+  .newsletter__decor:nth-of-type(1) {
+    top: auto;
+    left: auto;
+    right: 89px;
+    bottom: 0;
+  }
+
+  .newsletter__decor:nth-of-type(2) {
+    top: auto;
+    right: 178px;
+    bottom: 36px;
+  }
+
+  .newsletter__decor:nth-of-type(3) {
+    top: auto;
+    left: auto;
+    right: 113px;
+    bottom: 74px;
+  }
+
+  .foot__row {
+    flex-direction: column;
+    row-gap: 38px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .company__img:nth-of-type(1) {
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+  }
+
+  .company__img:nth-of-type(2) {
+    top: 0;
+    left: 235px;
+  }
+
+  .company__img:nth-of-type(3) {
+    top: 59px;
+    right: 65px;
+  }
+
+  .company__img:nth-of-type(4) {
+    right: 100px;
+    bottom: 40px;
+  }
+
+  .company__img:nth-of-type(5) {
+    left: 220px;
+    bottom: 0;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+  .newsletter__title,
+  .testimonial__title,
+  .popular__title,
+  .category__title,
+  .company__title {
+    font-size: 2.6rem;
+  }
+
+  .hero__title {
+    font-size: 3.6rem;
+
+    &::before {
+      top: 63px;
+      left: 0;
+      width: 80%;
+      height: 48%;
+      rotate: 0deg;
+    }
+  }
+
+  .company__title {
+    &::before {
+      top: 15px;
+      left: 86px;
+      width: 56%;
+      height: 60%;
+      rotate: 0deg;
+    }
+  }
+
+  .category__title {
+    &::before {
+      top: 17px;
+      width: 37%;
+      height: 100%;
+      left: 37%;
+    }
+  }
+
+  .category__desc {
+    width: 70%;
+  }
+
+  .popular__title {
+    &::before {
+      top: 17px;
+      right: 57px;
+      width: 50%;
+      height: 36%;
+    }
+  }
+  .testimonial__title {
+    &::before {
+      top: 17px;
+      left: 35%;
+      height: 45%;
+    }
+  }
+
+  .testimonial__media {
+    height: 409px;
+  }
+
+  .newsletter__title {
+    &::before {
+      top: 15px;
+      right: 70px;
+      width: 39%;
+      height: 47%;
+    }
+  }
+}
